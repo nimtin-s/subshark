@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>subshark</title>
+<meta name="description" content="Things I've built.">
+<style>
+  :root { --bg: #faf9f6; --fg: #1a1a1a; --muted: #6b6b6b; --line: #e4e2dc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141414; --fg: #ececec; --muted: #9a9a9a; --line: #2a2a2a; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 system-ui, -apple-system, sans-serif; }
+  main { max-width: 36rem; margin: 0 auto; padding: 5rem 1rem; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  p { color: var(--muted); margin: 0 0 3rem; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { border-top: 1px solid var(--line); }
+  li:last-child { border-bottom: 1px solid var(--line); }
+  a { display: block; padding: 1.25rem 0; color: inherit; text-decoration: none; }
+  a:hover strong, a:focus-visible strong { text-decoration: underline; }
+  strong { font-weight: 600; }
+  strong::after { content: " ↗"; color: var(--muted); }
+  span { display: block; color: var(--muted); font-size: .95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>subshark</h1>
+  <p>Things I've built.</p>
+  <ul>
+    <li><a href="https://www.nimtin.com"><strong>nimtin</strong>
+      <span>Matches creators with venues for popups, classes and residencies — terms, payments and recurrence handled.</span></a></li>
+    <li><a href="https://www.plumcha.com"><strong>plumcha</strong>
+      <span>Trusted local providers, shared across the groups of neighbors you're already in.</span></a></li>
+    <li><a href="https://www.onnbon.com"><strong>onnbon</strong>
+      <span>A friends and family project bringing South Asian single estate teas to community spaces.</span></a></li>
+  </ul>
+</main>
+</body>
+</html>
