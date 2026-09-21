@@ -3,12 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
 <title>subshark</title>
 <meta name="description" content="projects">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400&family=Urbanist:wght@800&display=swap" rel="stylesheet">
 <style>
+  /* Self-hosted latin subsets: nothing on this page talks to a third party. */
+  @font-face { font-family: Jost; font-style: normal; font-weight: 400; font-display: swap;
+               src: url(jost-400.woff2) format('woff2'); }
+  @font-face { font-family: Urbanist; font-style: normal; font-weight: 800; font-display: swap;
+               src: url(urbanist-800.woff2) format('woff2'); }
   /* Light only: the brand colours are tuned for light grounds. */
   :root { --bg: #faf9f6; --fg: #1a1a1a; --muted: #6b6b6b; --line: #e4e2dc; }
   body { margin: 0; background: var(--bg); color: var(--fg);
