@@ -5,8 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="no-referrer">
-<title>subshark</title>
-<meta name="description" content="projects">
+<title>Subhadeep Sarker</title>
+<meta name="description" content="Subhadeep Sarker's projects: onnbon, plumcha, nimtin.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Subhadeep Sarker">
+<meta property="og:description" content="onnbon · plumcha · nimtin">
+<meta property="og:url" content="https://subshark.com/">
+<meta property="og:type" content="website">
 <style>
   /* Self-hosted latin subsets: nothing on this page talks to a third party. */
   @font-face { font-family: Jost; font-style: normal; font-weight: 400; font-display: swap;
@@ -17,13 +22,26 @@
   :root { --bg: #faf9f6; --fg: #1a1a1a; --muted: #6b6b6b; --line: #e4e2dc; }
   body { margin: 0; background: var(--bg); color: var(--fg);
          font: 17px/1.55 system-ui, -apple-system, sans-serif; }
-  main { max-width: 36rem; margin: 0 auto; padding: 5rem 1rem; }
-  h1 { font-size: 1rem; font-weight: 400; color: var(--muted); margin: 2.575rem 0 3rem; } /* where it sat under the old name */
+  main { max-width: 36rem; margin: 0 auto; padding: 2rem 1rem; }
+  header { margin-bottom: 1.5rem; }
+  header p { margin: 0; }
+  header .say, header .links { color: var(--muted); margin: .25rem 0 0; }
+  header a { color: inherit; text-underline-offset: .15em; }
+  header a:hover, header a:focus-visible { color: var(--fg); }
+  h1 { font-size: 1rem; font-weight: 400; margin: 0; }
+  figure { margin: 1.5rem 0 0; }
+  figure img { display: block; width: 100%; height: auto; max-height: 13rem; object-fit: cover; }
+  figcaption { color: var(--muted); font-size: .95rem; margin-top: .5rem; }
+  footer a { color: inherit; text-underline-offset: .15em; }
+  footer a:hover, footer a:focus-visible { color: var(--fg); }
   ul { list-style: none; padding: 0; margin: 0; }
   li { border-top: 1px solid var(--line); }
   li:last-child { border-bottom: 1px solid var(--line); }
-  a { display: flex; align-items: center; height: 5.5rem; text-decoration: none; }
-  a:hover, a:focus-visible { background: #f1efe9; }
+  li a { display: grid; grid-template-columns: 10rem 1fr; align-items: center; gap: .25rem 1.25rem;
+         min-height: 4rem; padding: .5rem 0; box-sizing: border-box; text-decoration: none; }
+  @media (max-width: 30rem) { li a { grid-template-columns: 1fr; } }
+  .tag { color: var(--muted); font-size: .95rem; }
+  li a:hover, li a:focus-visible { background: #f1efe9; }
   /* Each wordmark as its own site sets it. */
   .onnbon { font: 400 2.4rem/1 Jost, Futura, sans-serif; color: #941100; }
   .plumcha { font: 800 2.4rem/1 Urbanist, sans-serif; letter-spacing: -0.02em; }
@@ -34,12 +52,17 @@
 </head>
 <body>
 <main>
-  <h1>projects</h1>
+  <header>
+    <h1>Subhadeep Sarker</h1>
+    <p class="say">[shu-bho-deep]</p>
+    <p class="links"><a href="mailto:s@subshark.com">email</a> · <a href="https://www.linkedin.com/in/subhadeep-sarker-9698922/">linkedin</a></p>
+  </header>
   <ul>
-    <li><a href="https://www.onnbon.com"><span class="onnbon">onnbon</span></a></li>
-    <li><a href="https://www.plumcha.com" aria-label="plumcha"><span class="plumcha"><b>plum</b><b>cha</b></span></a></li>
-    <li><a href="https://www.nimtin.com"><img class="nimtin" src="nimtin.svg" alt="nimtin"></a></li>
+    <li><a href="https://www.onnbon.com"><span class="onnbon">onnbon</span><span class="tag">drink fresh tea</span></a></li>
+    <li><a href="https://www.plumcha.com" aria-label="plumcha"><span class="plumcha"><b>plum</b><b>cha</b></span><span class="tag">neighbors · share · collaborate</span></a></li>
+    <li><a href="https://www.nimtin.com"><img class="nimtin" src="nimtin.svg" alt="nimtin"><span class="tag">quiet hours, booked</span></a></li>
   </ul>
+  <figure><img src="bench.jpg" alt="Slat bench in Baltic birch plywood on a concrete floor" width="1400" height="716"><figcaption><i>Slat bench</i>, 2025<br>Baltic birch plywood, galvanized steel hardware<br>18 × 48 × 18 in.</figcaption></figure>
 </main>
 </body>
 </html>
